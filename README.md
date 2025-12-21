@@ -1,4 +1,4 @@
-### C++/Java Notes
+### C++/Java Notes 
 
 - These are my own personal notes on C++ and java.
 - For C notes check out [https://github.com/hyperFounder/C-Programming](https://github.com/hyperFounder/C-Programming)
