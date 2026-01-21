@@ -39,6 +39,6 @@ The Solution: One of those links must be a weak_ptr. Usually, the "parent" owns 
 
 Smart pointers = RAII objects that manage resources automatically.
 
-- std::unique_ptr → exclusive ownership
-- std::shared_ptr → shared ownership (reference counted)
+- std::unique_ptr → exclusive ownership of a resoruce
+- std::shared_ptr → shared ownership (reference counted) of a resoruce
 - std::weak_ptr → non-owning observer of a shared_ptr
