@@ -33,3 +33,12 @@ When both Counts hit 0: The Control Block itself is deallocated from the Heap.
 As a Systems Programmer, your biggest enemy is the Reference Cycle. If Object A has a shared_ptr to B, and B has a shared_ptr to A, their counts will never reach zero. They are "deadlocked" in memory.
 
 The Solution: One of those links must be a weak_ptr. Usually, the "parent" owns the "child" (shared), but the "child" only observes the "parent" (weak).
+
+
+### Shared pointers and types
+
+Smart pointers = RAII objects that manage resources automatically.
+
+- std::unique_ptr → exclusive ownership
+- std::shared_ptr → shared ownership (reference counted)
+- std::weak_ptr → non-owning observer of a shared_ptr
